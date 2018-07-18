@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import { Form, Checkbox, Image, Icon, Link, Button, Label, Radio, Input } from 'workshop';
+import { Form, Checkbox, Selectbox, Image, Icon, Link, Button, Label, Radio, Input } from 'workshop';
 // import '@agoda/kite/desktop';
 
 const App = () => (
@@ -14,6 +14,7 @@ const App = () => (
                 <Route exact path="/Label" component={Label} />
                 <Route exact path="/Input" component={Input} />
                 <Route exact path="/Checkbox" component={Checkbox} />
+                <Route exact path="/Selectbox" component={Selectbox} />
                 <Route exact path="/Radio" component={Radio} />
                 <Route exact path="/Form" component={Form} />
             </main>

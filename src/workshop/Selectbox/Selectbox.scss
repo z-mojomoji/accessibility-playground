@@ -1,0 +1,61 @@
+@import "~kiteHelpers";
+
+.checkBox {
+    &_container {
+        display: block;
+        position: relative;
+        padding-left: 22px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 14px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        &:hover {
+            color: #53b7ff;
+        }
+
+        &:hover .checkBox_input ~ .checkBox_checkmark {
+            border-color: #53b7ff;
+        }
+
+        .checkBox_input:checked ~ .checkBox_checkmark:after {
+            display: block;
+        }
+    }
+
+    &_input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    &_checkmark {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        border: 1px solid #e8e8e8;
+        background: #fff;
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        transform: translateY(-50%);
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: calc(50% - 3px);
+            top: calc(50% - 7px);
+            width: 6px;
+            height: 12px;
+            border: solid #0283df;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            display: none;
+        }
+    }
+}
