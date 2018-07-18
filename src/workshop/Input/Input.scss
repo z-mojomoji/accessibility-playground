@@ -1,0 +1,14 @@
+@import "~kiteHelpers";
+
+.iconText {
+    display: inline-block;
+
+    &_icon {
+        margin-right: 5px;
+        color: color(green, primary);
+    }
+
+    span {
+        color: color(green, dark);
+    }
+}

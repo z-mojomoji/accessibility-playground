@@ -1,0 +1,21 @@
+@import "~kiteHelpers";
+
+.vh {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.label {
+    &_input {
+        max-width: 350px;
+        padding: 15px 25px 15px 15px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}

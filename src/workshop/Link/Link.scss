@@ -1,0 +1,9 @@
+@import "~kiteHelpers";
+
+a {
+    color: color(blue);
+
+    &:hover {
+        color: color(blue, light);
+    }
+}

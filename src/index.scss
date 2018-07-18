@@ -1,0 +1,114 @@
+// ========================================================================
+// BASE - IMPORTS
+// ========================================================================
+
+// settings
+
+html {
+    height: 100%;
+    font-size: 100%;
+    font-family: Mallory, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: white;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+
+    body {
+        margin: 0;
+        height: calc(100% - 130px);
+    }
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+button {
+    font-family: Mallory, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@import "~kiteDesktop";
+
+.main-container {
+    padding: 25px;
+    height: calc(100% - 130px);
+}
+
+.main-header {
+    direction: ltr;
+    background-color: #24406d;
+    padding: 15px 0;
+
+    .agoda-logo {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 20px;
+
+        img {
+            height: 35px;
+        }
+    }
+
+    h2 {
+        color: #ddd;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .menu-container {
+        float: right;
+        margin: 2px 20px;
+
+        a {
+            color: #eee;
+            font-size: 16px;
+            line-height: 2;
+            margin: 0 7px;
+            transition: all 0.2s linear;
+            text-decoration: none;
+
+            &:hover {
+                color: #aaa;
+            }
+        }
+    }
+}
+
+.c-image-example {
+    height: 300px;
+}
+
+.main-trigger {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    direction: ltr;
+    width: 100%;
+    padding: 10px 10%;
+    background-color: #eee;
+    border: solid 1px #ddd;
+    text-align: center;
+}
+
+.btn-trigger {
+    margin: 0 10px;
+    padding: 7px 15px;
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: color(gray-text, lighter);
+    border: 1px solid color(gray-text, light);
+    border-radius: 5px;
+    color: color(gray-text, primary);
+    transition: background-color 0.5s;
+    box-shadow: 1px 1px 1px #eee;
+
+    &:hover {
+        background-color: color(gray-text, lightest);
+    }
+}

@@ -1,0 +1,59 @@
+@import "~kiteHelpers";
+
+.loginForm {
+    width: 33%;
+    margin: 10px auto;
+    background: color(light-bg, dark);
+    box-shadow: 1px 1px 1px #eee;
+    padding: 30px 20px;
+
+    &_label {
+        display: block;
+        font-weight: $font-bold;
+        margin: 0 0 5px;
+        font-size: 14px;
+    }
+
+    &_input {
+        display: block;
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    &_forget {
+        color: color(blue, primary);
+        display: inline-block;
+        margin: 10px 0;
+        cursor: pointer;
+
+        &:hover {
+            color: color(blue, light)
+        }
+    }
+
+    &_btn {
+        background: color(blue, primary);
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-family: inherit;
+        border-radius: 5px;
+        padding: 10px 0;
+        min-width: 100px;
+        float: right;
+        cursor: pointer;
+
+        &:hover {
+            background: color(blue, light)
+        }
+    }
+
+    &::after {
+        content: '';
+        clear: both;
+        width: 0;
+        height: 0;
+        font-size: 0;
+    }
+}

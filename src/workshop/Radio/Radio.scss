@@ -1,0 +1,41 @@
+@import "~kiteHelpers";
+
+.radioButton {
+    &_list {
+        list-style: none;
+    }
+
+    &_box {
+        padding: 10px 0 10px 30px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid color(gray-text, primary);
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: block;
+        }
+
+        &[aria-checked~="true"],
+        &:checked,
+        &.checked {
+            &::after{
+                content: '';
+                position: absolute;
+                left: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: color(blue, primary);
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+                display: block
+            }
+        }
+    }
+}

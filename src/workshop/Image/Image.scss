@@ -1,0 +1,13 @@
+@import "~kiteHelpers";
+
+.ex-lang {
+    color: red;
+    font-size: 14px;
+    font-weight: 300;
+
+    @include targetlanguage(jp, ar){
+        color: green;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}

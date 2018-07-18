@@ -1,0 +1,17 @@
+@import "~kiteHelpers";
+
+.button {
+    background-color: color(blue, primary);
+    transition: background-color 0.5s;
+    color: white;
+    padding: 7px 10px;
+    box-shadow: none;
+    border: none;
+    min-width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: color(blue, light);
+    }
+}
