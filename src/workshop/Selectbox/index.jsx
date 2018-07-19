@@ -4,43 +4,29 @@ import './Selectbox.scss';
 const Selectbox = () => (
     <div>
         <h2>Normal Checkbox</h2>
-        <fieldset>
-            <legend>Choose some monster features</legend>
-
-            <div>
-                <input type="checkbox" id="scales" name="feature" value="scales" />
-                <label htmlFor="scales">Scales</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="horns" name="feature" value="horns" />
-                <label htmlFor="horns">Horns</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="claws" name="feature" value="claws" />
-                <label htmlFor="claws">Claws</label>
-            </div>
-
-        </fieldset>
+        <select>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
         <h2>Custom Checkbox</h2>
-        <div>
-            <label className="checkBox_container" htmlFor="one">One
-                <input type="checkbox" className="checkBox_input" id="one" value="one" />
-                <span className="checkBox_checkmark" />
-            </label>
-            <label className="checkBox_container" htmlFor="two">Two
-                <input type="checkbox" className="checkBox_input" id="two" value="two" />
-                <span className="checkBox_checkmark" />
-            </label>
-            <label className="checkBox_container" htmlFor="three">Three
-                <input type="checkbox" className="checkBox_input" id="three" value="three" />
-                <span className="checkBox_checkmark" />
-            </label>
-            <label className="checkBox_container" htmlFor="four">Four
-                <input type="checkbox" className="checkBox_input" id="four" value="four" />
-                <span className="checkBox_checkmark" />
-            </label>
+        <div className="selectBox_container">
+            <select className="selectBox_select">
+                <option value="0">Select car:</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Citroen</option>
+                <option value="4">Ford</option>
+                <option value="5">Honda</option>
+                <option value="6">Jaguar</option>
+                <option value="7">Land Rover</option>
+                <option value="8">Mercedes</option>
+                <option value="9">Mini</option>
+                <option value="10">Nissan</option>
+                <option value="11">Toyota</option>
+                <option value="12">Volvo</option>
+            </select>
         </div>
     </div>
 );
