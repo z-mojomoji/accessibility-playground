@@ -4,7 +4,7 @@ import './Checkbox.scss';
 const Checkbox = () => (
     <div>
         <h2>Normal Checkbox</h2>
-        <fieldset role="group">
+        <fieldset>
             <legend>Choose some monster features</legend>
 
             <div>

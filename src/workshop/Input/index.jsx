@@ -8,7 +8,7 @@ const style = {
 const Input = () => (
     <div>
         <h2>Normal Input</h2>
-        <input id="name" type="text" />
+        <input type="text" />
 
         <h2>Hidden Label Input</h2>
         <label htmlFor="search" style={style}>Enter your destination or property</label>
