@@ -21,7 +21,8 @@
             border-color: #53b7ff;
         }
 
-        .checkBox_input:checked ~ .checkBox_checkmark:after {
+        .checkBox_input:checked ~ .checkBox_checkmark:after,
+        .checked:after {
             display: block;
         }
     }

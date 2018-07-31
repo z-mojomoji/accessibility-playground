@@ -11,10 +11,10 @@ const Label = () => (
         <label htmlFor="searchDes">
             Search Destination
         </label>
-        <input type="text" name="searchDes" id="searchDes" className="label_input" placeholder="" />
+        <input type="text" className="label_input" />
         <h2>Hidden Label</h2>
         <label htmlFor="search" style={style}>Enter your destination or property</label>
-        <input type="text" name="search" id="search" className="label_input" placeholder="" />
+        <input type="text" className="label_input" />
     </div>
 );
 
